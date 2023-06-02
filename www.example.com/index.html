@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- FontAwesome Icon Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import "oneMore.css";
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primaryColor: rgb(221, 71, 214);
+            --secondaryColor: rgb(13, 122, 162);
+        }
+
+
+
+        h1 {}
+
+        h2 {
+            text-align: center;
+            font-size: 54px;
+            margin-bottom: 35px;
+            letter-spacing: -2px;
+            font-family: 'Panipuri';
+        }
+
+        span {
+            color: #ffc000;
+        }
+
+        h3 {}
+
+        h4 {
+            font-size: 22px;
+            color: rgb(17, 17, 17);
+            margin-bottom: 25px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        h6 {}
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+            color: rgb(86, 86, 86);
+
+        }
+
+
+        #paraTwo {
+            font-size: 16px;
+            line-height: 33px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        #wrapper {
+            width: 1140px;
+            height: 480px;
+            margin: 0 auto;
+        }
+
+
+        header {}
+
+        #navWrapper {
+
+            height: 80px;
+            width: 1240px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            float: left;
+            height: 80px;
+            background: url(images/logo.png) no-repeat;
+            background-position: center;
+            background-size: auto;
+            width: 250px;
+            background-blend-mode: screen;
+            -ms-background-blend-mode: screen;
+            -webkit-background-blend-mode: screen;
+        }
+
+
+
+        #navBar {
+            float: right;
+            list-style-type: none;
+            margin-right: 55px;
+        }
+
+        #navBar li {
+            float: left;
+            line-height: 80px;
+            margin: 0px 20px;
+        }
+
+        #navBar li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        #dropDown {
+            position: relative;
+        }
+
+        #dropDown:hover ul {
+            display: block;
+        }
+
+        #dropDown ul {
+            width: 220px;
+            height: auto;
+            background: #212529;
+            list-style-type: none;
+            position: absolute;
+            display: none;
+        }
+
+        #dropDown li {
+            line-height: 50px;
+        }
+
+        #ctaBtn {
+            float: right;
+            padding: 12px 30px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background: #ffc000;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 15px;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* banner Section */
+
+        #bannerSection {
+            background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+            margin-top: -80px;
+
+        }
+
+
+        #bannerWrapper {
+            width: 1240px;
+            height: 900px;
+            margin: 0 auto;
+            padding: 120px 0px;
+            color: #fff;
+        }
+
+        #bannerWrapper h1::after {
+            content: "";
+            display: block;
+            /*  font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 50px; */
+            width: 100px;
+            height: 6px;
+            border-radius: 5px;
+            background: #ffc000;
+            margin: 30px auto 0;
+        }
+
+        #bannerWrapper h1 {
+            font-weight: 300 !important;
+            font-size: 3.5rem !important;
+            text-align: center;
+        }
+
+        #bannerWrapper h1 span {
+            display: block;
+            font-weight: 700 !important;
+            margin: -20px 0 0 0 !important;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .boxOne {
+            width: 370px;
+            height: 455px;
+            background: rgb(219, 244, 255);
+            padding: 50px 35px;
+            float: left;
+            margin: 0 5px;
+            border-radius: 8px;
+            box-shadow: 0px 1px 50px rgba(111, 148, 204, 0.05);
+            box-sizing: border-box;
+        }
+
+        #adjust {
+            font-size: 65px;
+            color: rgb(36, 104, 214);
+            margin-bottom: 30px;
+        }
+
+
+        .boxOne ul {
+            list-style-type: circle;
+            padding-left: 18px;
+            padding-top: 25px;
+        }
+
+        .boxOne li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: rgb(86, 86, 86);
+        }
+
+        .latestBlog {
+            background: var(--secondaryColor);
+            padding: 60px 0px;
+        }
+
+        #signUp {
+            padding: 80px 0px 120px;
+            background: url(./images/bg-5-1.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+
+
+        }
+
+        #signupWrapper {
+            width: 45%;
+            height: 295px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+
+        #signupWrapper #paraTwo {
+            text-align: center;
+            padding: 0 14%;
+        }
+
+        #formWrapper {
+            padding: 35px 0px 10px;
+            width: 900px;
+            margin: 0 auto;
+        }
+
+
+        #formWrapper input {
+            border: none;
+            outline: none;
+            appearance: none;
+            float: left;
+
+        }
+
+        input[type=text] {
+            padding: 15px 76px;
+            border-radius: 50px 0px 0px 50px;
+            width: 520px;
+            font-size: 18px;
+        }
+
+
+        input[type=submit] {
+            padding: 15px 26px;
+            border-radius: 0px 50px 50px 0px;
+            text-align: center;
+            width: 212px;
+            background: #ffc000;
+            color: black;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        input[type=submit]:hover {
+            background: #000;
+            color: #ffc000;
+            cursor: pointer;
+        }
+
+        #offerSection {
+            padding: 60px 0px;
+        }
+
+
+        #offerWrapper #paraTwo {
+            padding: 0 30%;
+            margin-bottom: 30px;
+        }
+
+        #offerWrapper {
+            width: 1152px;
+            height: 580px;
+            margin: 0 auto;
+        }
+
+        .offerBlock {
+            width: 285px;
+            height: 145px;
+            background: url(./images/services-1.png) no-repeat;
+            background-size: 50px;
+            background-position: left top;
+            padding: 0px 0px 0px 69px;
+            float: left;
+            margin: 10px 15px;
+        }
+
+        .offerBlock.two {
+            background: url(./images/services-2.png) no-repeat;
+        }
+
+
+        .offerBlock.three {
+            background: url(./images/services-3.png) no-repeat;
+        }
+
+        .offerBlock h4 {
+            margin-bottom: 20px;
+        }
+
+
+        footer {
+            background: #212529;
+            padding: 60px 0px;
+
+        }
+
+        footer li,
+        footer h5,
+        footer p {
+            color: #fff;
+
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer p {
+            line-height: 24px;
+        }
+
+        footer ul li {
+            font-size: 14px;
+            padding: 0 0 18px;
+        }
+
+        footer h5 {
+            padding: 0 0 10px;
+            font-weight: 500;
+        }
+
+        .footerSetBlock hr {
+            margin-bottom: 25px;
+        }
+
+        .socialBlock li {
+            float: left;
+            margin: 25px 25px 0 0;
+        }
+
+        .socialBlock li i {
+            background: #fff;
+            color: rgb(19, 69, 208);
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 50px;
+        }
+
+
+        #footerWrapper {
+            height: 260px;
+            width: 1340px;
+            margin: 0 auto;
+        }
+
+        .footerSetBlock {
+            float: left;
+            width: 160px;
+            padding: 0 15px;
+            margin: 25px;
+        }
+
+        .footerSetBlock ul {
+            list-style-type: none;
+        }
+
+        .footerSetBlock ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footerSetBlock.setOne {
+            width: 350px;
+        }
+
+        #setFour ul li {
+            padding: 0 0 11px;
+            margin-left: 30px;
+        }
+
+        #setFour ul li:nth-child(odd) {
+            font-weight: 600;
+        }
+
+        .fa.fa-phone,
+        .fa.fa-envelope,
+        .fa.fa-map-marker {
+            float: left;
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body id="homePage">
+
+
+    <!-- Header Section Start Here -->
+    <header>
+        <div id="navWrapper">
+            <div class="logo">
+            </div>
+
+            <button type="button" id="ctaBtn">Get It Support</button>
+            <ul id="navBar">
+                <li><a href="">Home </a></li>
+                <li><a href="">About Us</a></li>
+                <li id="dropDown"><a href="">Services </a>
+                    <ul>
+                        <li><a href="">Services </a></li>
+                        <li><a href="">Services Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Projects </a></li>
+                <li><a href="">Pages </a></li>
+                <li><a href="">Blog </a></li>
+                <li><a href="">Contact </a></li>
+            </ul>
+
+
+        </div>
+
+    </header>
+    <!-- Header Section End Here -->
+
+
+    <section id="bannerSection">
+        <div id="bannerWrapper">
+            <h1>Our Best Qualified
+                <span>Specialists</span>
+            </h1>
+        </div>
+
+    </section>
+
+    <section class="latestBlog">
+
+        <h2>Latest Blog's</h2>
+        <div id="wrapper">
+            <div class="boxOne">
+                <i class="fa fa-adjust" aria-hidden="true" id="adjust"></i>
+                <h4>Main Heading Here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                </ul>
+
+            </div>
+
+            <div class="boxOne">
+                <i class="fa fa-adjust" aria-hidden="true" id="adjust"></i>
+                <h4>Main Heading Here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                </ul>
+
+            </div>
+
+            <div class="boxOne">
+                <i class="fa fa-adjust" aria-hidden="true" id="adjust"></i>
+                <h4>Main Heading Here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="signUp">
+        <div id="signupWrapper">
+            <h2>Sign Up for <span>Email Updates!</span> </h2>
+            <div id="paraTwo">Knowing about all the recent developments in the industry is how you should handle being
+                an adman!</div>
+
+            <div id="formWrapper">
+                <form action="">
+                    <input type="text">
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="offerSection">
+
+
+        <div id="offerWrapper">
+            <h2>Services We Offer</h2>
+            <p id="paraTwo">Over the years of being in the industry, we’ve made sure to have a lineup of services.</p>
+            <div class="offerBlock">
+                <h4>Content Marketing</h4>
+                <p>When it comes to digital marketing, one cannot underestimate the importance of the content. This is
+                    why we have a team of professional...</p>
+            </div>
+
+            <div class="offerBlock two">
+                <h4>Content Marketing</h4>
+                <p>When it comes to digital marketing, one cannot underestimate the importance of the content. This is
+                    why we have a team of professional...</p>
+            </div>
+
+
+            <div class="offerBlock three">
+                <h4>Content Marketing</h4>
+                <p>When it comes to digital marketing, one cannot underestimate the importance of the content. This is
+                    why we have a team of professional...</p>
+            </div>
+
+            <div class="offerBlock four">
+                <h4>Content Marketing</h4>
+                <p>When it comes to digital marketing, one cannot underestimate the importance of the content. This is
+                    why we have a team of professional...</p>
+            </div>
+
+            <div class="offerBlock five">
+                <h4>Content Marketing</h4>
+                <p>When it comes to digital marketing, one cannot underestimate the importance of the content. This is
+                    why we have a team of professional...</p>
+            </div>
+
+
+            <div class="offerBlock six">
+                <h4>Content Marketing</h4>
+                <p>When it comes to digital marketing, one cannot underestimate the importance of the content. This is
+                    why we have a team of professional...</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section Start Here -->
+    <footer>
+        <div id="footerWrapper">
+
+            <div class="footerSetBlock setOne">
+                <h5>About Us</h5>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco consectetur
+                    laboris.</p>
+                <ul class="socialBlock">
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+
+            <div class="footerSetBlock">
+                <h5>Our Services</h5>
+                <hr>
+                <ul>
+                    <li><a href="">IT Solution</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Networking Services</a></li>
+                    <li><a href="">SEO Optimization</a></li>
+                    <li><a href="">App Optimization</a></li>
+                </ul>
+            </div>
+
+            <div class="footerSetBlock">
+                <h5>Useful Links</h5>
+                <hr>
+                <ul>
+                    <li><a href="">IT Solution</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href="">Networking Services</a></li>
+                    <li><a href="">SEO Optimization</a></li>
+                    <li><a href="">App Optimization</a></li>
+                </ul>
+            </div>
+
+            <div class="footerSetBlock setOne" id="setFour">
+                <h5>Contact Info</h5>
+                <hr>
+                <ul>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <li>Phone</li>
+                    <li><a href="">080 707 555-321</a></li>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <li>Email</li>
+                    <li><a href="">demo@example.com</a></li>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <li>Address</li>
+                    <li><a href="">526 Melrose Street, Water Mill, 11976 New York</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+        </div><!-- Wrapper End Here -->
+    </footer><!-- Section End Here -->
+
+
+</body>
+
+</html>
